@@ -10,7 +10,12 @@ exports.config = {
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    "chromeOptions": {
+      // binary: 'C:/Users/Karthik/AppData/Local/Google/Chrome SxS/Application/chrome.exe',
+      args: [],
+      extensions: [],
+  }
   },
 
   baseUrl: 'http://localhost:3000',
